@@ -1,0 +1,13 @@
+.border-bottom{
+  border-bottom:1px solid  #bdbcbc;;
+}
+.text-color{
+  color:#5bc0de;
+}
+.button-style{
+  background: white;
+    border: 1px solid #dad8d8;
+    border-radius: 0;
+ 
+    margin-left: 50px;
+}

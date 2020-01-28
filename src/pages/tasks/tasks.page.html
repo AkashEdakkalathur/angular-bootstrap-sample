@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <!--<tasks-grid class="w-100"></tasks-grid>-->
+    <table class="table table-hover table-striped  table-bordered w-100">
+      <thead>
+        <tr  class="d-flex">
+          <th class="col-2">Code</th>
+          <th class="col-9">Title</th>
+          <th class="col-1">
+            <button type="button" class="btn btn-outline-primary">Re</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; trackBy: trackItem" class="d-flex">
+          <td class="col-2">{{item.code}}</td>
+          <td class="col-9">{{item.title}}</td>
+          <th class="col-1">
+            <button type="button" class="btn btn-outline-primary">X</button>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

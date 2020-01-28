@@ -1,0 +1,12 @@
+.active {
+    background-color: white ;
+    color: #0275d8 !important;
+   
+    width: fit-content;
+}
+
+.nav-item a {
+ 
+
+  color: white;
+}

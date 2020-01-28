@@ -1,0 +1,23 @@
+
+<!--<div class="tool-buttons" [innerHtml]="safeHtml">
+  <button type="button" class="btn btn-outline-primary">Add Task</button>
+</div>-->
+
+<table class="table table-hover table-striped  table-bordered">
+  <thead>
+    <tr  class="d-flex">
+      <th [ngClass]="{'col-2':haveButtons,'col-3':!haveButtons}">Code</th>
+      <th class="col-9">Title</th>
+      <th class="col-1" [innerHtml]="headerHtml" *ngIf="haveButtons"><!--<button type="button" class="btn btn-outline-primary">Re</button>--></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items; trackBy: trackItem" class="d-flex">
+      <td [ngClass]="{'col-2':haveButtons,'col-3':!haveButtons}">{{item.code}}</td>
+      <td class="col-9">{{item.title}}</td>
+      <th class="col-1" [innerHtml]="itemHtml" *ngIf="haveButtons">
+        <!--<button type="button" class="btn btn-outline-primary">X</button>-->
+      </th>
+    </tr>
+  </tbody>
+</table>
